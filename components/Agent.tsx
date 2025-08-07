@@ -88,7 +88,6 @@ const Agent = ({
     }
 
     const handleGenerateFeedback = async (messages: SavedMessage[]) => {
-      console.log('Generate feedback here.');
       console.log("handleGenerateFeedback");
 
       const { success, feedbackId: id } = await createFeedback({
@@ -154,7 +153,7 @@ const Agent = ({
           <div className="avatar">
             <Image
               src="/ai-avatar.png"
-              alt="vapi"  //*****change hua */
+              alt="profile-image"
               width={65}
               height={54}
               className="object-cover"
@@ -169,9 +168,9 @@ const Agent = ({
           <div className="card-content">
             <Image
               src="/user-avatar.png"
-              alt="user avatar"
-              width={540}
-              height={540}
+              alt="profile-image"
+              width={539}
+              height={539}
               className="rounded-full object-cover size-[120px]"
             />
             <h3>{userName}</h3>
